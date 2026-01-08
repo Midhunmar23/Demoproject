@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MultibrowserTesting" parallel="tests">
+	<test thread-count="5" name="ChromeTest">
+	<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testscript.LoginTest">
+				<methods>
+					<include
+						name="verifyThatTheUserShouldNotAbleToLoginWithInvalidUserCrediations"></include>
+					<include
+						name="verifyThatTheUserShouldnotabletoLoginWithInvalidPasswordandCorrectUsername">
+					</include>
+					<include
+						name="verifyThatTheIsAbleToSinginWithinVaidUsername">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+		<test thread-count="5" name="FireFoxTest">
+		<parameter name="browser" value="Firefox"></parameter>
+		<classes>
+			<class name="testscript.LoginTest">
+				<methods>
+					<exclude
+						name="verifyThatTheUserShouldNotAbleToLoginWithInvalidUserCrediations"></exclude>
+					<exclude
+						name="verifyThatTheUserShouldnotabletoLoginWithInvalidPasswordandCorrectUsername">
+					</exclude>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+</suite> <!--
+Suite -->
