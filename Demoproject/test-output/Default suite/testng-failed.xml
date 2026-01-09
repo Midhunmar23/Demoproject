@@ -6,7 +6,7 @@
       <class name="testscript.LoginTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="verifyThatTheIsAbleToSinginWithinVaidUsername"/>
+          <include name="verifyTheUserIsAbleToLoginTheSinginUsingValdCrediatiols"/>
           <include name="browserIntilization"/>
         </methods>
       </class> <!-- testscript.LoginTest -->

@@ -7,7 +7,6 @@
       <class name="testscript.LoginTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="verifyThatTheIsAbleToSinginWithinVaidUsername"/>
           <include name="browserIntilization"/>
           <include name="verifyThatTheUserShouldNotAbleToLoginWithInvalidUserCrediations"/>
           <include name="verifyThatTheUserShouldnotabletoLoginWithInvalidPasswordandCorrectUsername"/>
@@ -22,9 +21,9 @@
         <methods>
           <include name="verifyTheUserIsAbleToLoginTheSinginUsingValdCrediatiols"/>
           <include name="closeBrowser"/>
-          <include name="verifyThatTheIsAbleToSinginWithinVaidUsername"/>
           <include name="browserIntilization"/>
           <include name="verifyThatTheUserShouldNotMakeTheFiledNull"/>
+          <include name="verifyThatTheUserSholudNotAbleToSinginWithinVaidUsernameandInvalidPassword"/>
         </methods>
       </class> <!-- testscript.LoginTest -->
     </classes>

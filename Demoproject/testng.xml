@@ -2,14 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<test thread-count="5" name="Test">
+	<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="testscript.LoginTest">
 				<methods>
 					<include
 						name="verifyThatTheUserShouldNotAbleToLoginWithInvalidUserCrediations"></include>
-					<exclude
-						name="verifyThatTheUserShouldnotabletoLoginWithInvalidPasswordandCorrectUsername">
-					</exclude>
+						<include
+						name="verifyThatTheUserSholudNotAbleToSinginWithinVaidUsernameandInvalidPassword"></include>
+						<include
+						name="verifyThatTheUserShouldnotabletoLoginWithInvalidPasswordandCorrectUsername"></include>
+			
 				</methods>
 			</class>
 		</classes>

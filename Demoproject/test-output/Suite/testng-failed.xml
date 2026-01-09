@@ -11,7 +11,9 @@
     <classes>
       <class name="testscript.LoginTest">
         <methods>
-          <include name="verifyThatTheIsAbleToSinginWithinVaidUsername"/>
+          <include name="closeBrowser"/>
+          <include name="verifyTheUserIsAbleToLoginTheSinginUsingValdCrediatiols"/>
+          <include name="browserIntilization"/>
         </methods>
       </class> <!-- testscript.LoginTest -->
     </classes>
