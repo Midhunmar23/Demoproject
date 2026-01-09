@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import constant.Constant;
 import utilities.FileUploadUtility;
 import utilities.PageUtility;
+import utilities.Waitutility;
 
 public class LoginPage 
 {
@@ -20,6 +21,7 @@ public class LoginPage
 	  
 	  public WebDriver driver;
 	   FileUploadUtility fileuploadutility= new FileUploadUtility(); // declread as globally
+	   Waitutility waitutility= new Waitutility();
 	  
 	     public LoginPage(WebDriver driver) 
 	     {
@@ -39,6 +41,8 @@ public class LoginPage
 	      }
 	      public void ButtonClickonSinginButton() 
 	      {
+	    	 
+	    	  waitutility.waitForElementToBeClickable(driver, singinbutton);
 	    	  singinbutton.click();
 	      }
 	      
